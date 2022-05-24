@@ -1,3 +1,24 @@
+header{
+    width: 100%;
+    background-color: rgb(177, 209, 209);
+    padding: 80px 20px;
+}
 h1{
     font-size: 30px;
+    font-family: 'Akshar', sans-serif;
+    text-transform: uppercase;
+    position: absolute;
+    left: 20px;
+    top: 30px;
+}
+nav ul{
+    position: absolute;
+    width: 80%;
+    margin: auto;
+}
+nav li{
+    display: inline-block;
+}
+nav a{
+    text-decoration: none;
 }
