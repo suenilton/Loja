@@ -1,24 +1,75 @@
 header{
-    width: 100%;
-    background-color: rgb(177, 209, 209);
-    padding: 80px 20px;
+    width: auto;
+    padding: 10px;
+    background-image: url("D:\\Suenilton\\Pessoal\\Projetos Python\\Projeto loja jaqueline\\loja_de_roupas\\static\\imgs\\background-header.jpg");
 }
 h1{
     font-size: 30px;
     font-family: 'Akshar', sans-serif;
     text-transform: uppercase;
-    position: absolute;
-    left: 20px;
-    top: 30px;
+    padding: 20px 10px 60px;
+    display: inline-block;
+} 
+nav{
+    width: 80%;
+    background-color: rgb(107 209 209);
+    margin: auto;
 }
 nav ul{
-    position: absolute;
-    width: 80%;
-    margin: auto;
+    padding: 10px
 }
 nav li{
     display: inline-block;
+    margin: 0 15px;
+    position: relative;
+    left: 550px;
+    transition: 0.25s all;
 }
 nav a{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 23px;
     text-decoration: none;
+    color: black;
+    transition: 0.25s all;
+}
+nav li:hover{
+    transform: scale(1.05);
+}
+nav a:hover{
+    color: aliceblue;
+}
+.subtitulo{
+    font-size: 40px;
+    background-color: #f7f7f7;
+    width: auto;
+    padding: 50px;
+}
+#subtitulo-p1{
+    margin: 35px 390px 60px 440px;
+    font-size: 65px;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+.produto-1{
+    width: 50%;
+    display: inline-block;
+}
+.descricao-produto{
+    display: block;
+    text-align: center;
+}
+.descricao-produto p{
+    display: inline-block;
+}
+footer{
+    background-color: #f7f7f7;
+    padding: 50px;
+}
+footer h5{
+    font-size: 30px;
+    font-family: 'Akshar', sans-serif;
+    text-transform: uppercase;
+    padding: 20px 10px 20px;
+    display: block;
+    text-align: center;
 }
