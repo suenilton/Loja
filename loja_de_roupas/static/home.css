@@ -2,6 +2,7 @@ header{
     width: auto;
     padding: 10px;
     background-image: url("D:\\Suenilton\\Pessoal\\Projetos Python\\Projeto loja jaqueline\\loja_de_roupas\\static\\imgs\\background-header.jpg");
+    /* background-image: url(imgs/background-header.jpg); */
 }
 h1{
     font-size: 30px;
@@ -50,9 +51,51 @@ nav a:hover{
     border-bottom: 1px solid black;
     text-align: center;
 }
-.produto-1{
-    width: 50%;
+.coluna-1{
     display: inline-block;
+    width: 49%;
+}
+.produto-1{
+    width: 80%;
+    display: inline-block;
+    margin-bottom: 70px;
+    position: relative;
+}
+.produto-1 img{
+    width: 100%;
+}
+.produto-2{
+    width: 90%;
+    display: inline-block;
+    margin-bottom: 70px;
+    position: relative;
+}
+.produto-2 img{
+    width: 100%;
+}
+.coluna-2{
+    display: inline-block;
+    width: 49%;
+}
+.produto-3{
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 70px;
+    position: relative;
+    top: 60px;
+}
+.produto-3 img{
+    width: 100%;
+}
+.produto-4{
+    width: 60%;
+    display: inline-block;
+    margin-bottom: 70px;
+    position: relative;
+    top: 60px;
+}
+.produto-4 img{
+    width: 100%;
 }
 .descricao-produto{
     display: block;
