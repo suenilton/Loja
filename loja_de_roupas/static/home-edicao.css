@@ -1,7 +1,11 @@
+#bodyconf{
+    line-height:1;
+}
 header{
     width: auto;
     padding: 10px;
-    background-image: url(imgs/background-header.jpg);
+    background-image: url("D:\\Suenilton\\Pessoal\\Projetos Python\\Projeto loja jaqueline\\loja_de_roupas\\static\\imgs\\background-header.jpg");
+    /* background-image: url(imgs/background-header.jpg); */
 }
 h1{
     font-size: 30px;
@@ -18,6 +22,8 @@ nav{
 nav ul{
     padding: 10px;
     text-align: center;
+    margin-bottom: unset;
+
 }
 nav .itens-navbar{
     display: inline-block;
@@ -41,6 +47,20 @@ nav li:hover{
 nav a:hover{
     color: aliceblue;
 }
+.canto-direito-navbar-login{
+    margin: 0 0 0px 380px;
+    position: absolute;
+}
+.canto-direito-navbar-carrinho{
+    margin: 0px 0 0px 445px;
+    position: absolute;
+}
+.canto-direito-navbar-login a{
+    margin: 0 0 0 25px;
+}
+.canto-direito-navbar-carrinho a{
+    margin: 0 0 0 15px;
+}
 .subtitulo{
     font-size: 40px;
     background-color: #f7f7f7;
@@ -55,7 +75,8 @@ nav a:hover{
     font-family: 'Smooch', cursive;
 }
 .imgs-home{
-    background-image: url(imgs/background-imgs-home.jpg);
+    background-image: url("D:\\Suenilton\\Pessoal\\Projetos Python\\Projeto loja jaqueline\\loja_de_roupas\\static\\imgs\\background-imgs-home.jpg");
+    /* background-image: url(imgs/background-imgs-home.jpg); */
 }
 .coluna-1{
     display: inline-block;
@@ -155,4 +176,36 @@ footer a{
 footer li a:hover{
     transform: scale(1.2);
     color: #708dad;
+}
+.container-produtos{
+    display: block;
+    width: 80%;
+    margin: auto;
+    background-color: rgb(241 241 241);
+}
+.produto-do-estoque{
+    width: 47.8%;
+    margin: 15px;
+    display: inline-block;
+}
+.produto-do-estoque img{
+    width: 100%;
+}
+.descricao-produto-loja{
+    text-align: center;
+}
+.descricao-produto-loja p{
+    margin: 5px 0 15px 0;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+.descricao-produto-loja button{
+    font-family: 'Darker Grotesque', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    background-color: rgb(98, 131, 221)
+}
+.descricao-produto-loja button:hover{
+    cursor: pointer;
 }

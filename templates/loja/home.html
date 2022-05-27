@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<header>
+    <h1>Jaqueline Rodrigues</h1>
+    <nav>
+        <ul>
+            <div class="itens-navbar">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="loja.html">Loja</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="login.html">Login</a></li>
+            </div>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="subtitulo">
+        <p id="subtitulo-p1">Viva intensamente.</p>
+    </div>
+    <section class="imgs-home">
+        <div class="coluna-1">
+            <div class="produto-1">
+                <img src="{% static 'imgs\foto-1-loja.jpg' %}" alt="">
+                <div class="descricao-produto">
+                    <p>Descrição curta</p>
+                    <p>R$ 89,90</p>
+                </div>
+            </div>
+            <div class="produto-2">
+                <img src="{% static 'imgs\foto-2-loja.jpg' %}" alt="">
+                <div class="descricao-produto">
+                    <p>Descrição curta</p>
+                    <p>R$ 89,90</p>
+                </div>
+            </div>
+        </div>
+        <div class="coluna-2">
+            <div class="produto-3">
+                <img src="{% static 'imgs\foto-3-loja.jpg' %}" alt="">
+                <div class="descricao-produto">
+                    <p>Descrição curta</p>
+                    <p>R$ 89,90</p>
+                </div>
+            </div>
+            <div class="produto-4">
+                <img src="{% static 'imgs\foto-4-loja.jpg' %}" alt="">
+                <div class="descricao-produto">
+                    <p>Descrição curta</p>
+                    <p>R$ 89,90</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="container-footer">
+        <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'home' %}">loja</a></li>
+            <li><a href="{% url 'home' %}">Contato</a></li>
+            <li><a href="{% url 'home' %}">Sobre</a></li>
+        </ul>
+        <ul>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Envios e Devoluções</a></li>
+            <li><a href="">Política da Loja</a></li>
+            <li><a href="">Pagamentos</a></li>
+        </ul>
+        <ul>
+            <li><a href="">jaquelinerodrigues@gmail.com</a></li>
+            <li>Rua Principal S/N</li>
+            <li>Imperatriz-MA - 65909-001</li>
+            <li>Tel: (99) 981126621</li>
+        </ul>
+        <h5>Jaqueline Rodrigues</h5>
+    </div>
+</footer>
+{% endblock %}
