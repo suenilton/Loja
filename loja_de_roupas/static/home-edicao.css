@@ -7,7 +7,7 @@ header{
     background-image: url("D:\\Suenilton\\Pessoal\\Projetos Python\\Projeto loja jaqueline\\loja_de_roupas\\static\\imgs\\background-header.jpg");
     /* background-image: url(imgs/background-header.jpg); */
 }
-h1{
+#tituo-h1-principal{
     font-size: 30px;
     font-family: 'Akshar', sans-serif;
     text-transform: uppercase;

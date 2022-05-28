@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+{% include 'partials\_header.html' %}
+
+<main>
+    <div class="subtitulo">
+        
+    </div>
+    <section class="container-produtos">
+        {% if produtos %}
+            {% for produto in produtos %}
+                <div class="produto-do-estoque">
+                    {% if produto.img_produto == '' %}
+                        <img src="{% static 'imgs\produto-padrao.jpg' %}" alt="">
+                    {% else %}
+                        <img src="{{ produto.img_produto.url }}" alt="">
+                    {% endif %}
+                        <div class="descricao-produto-loja">
+                            <p>{{produto.nome_produto}}</p>
+                            <p>{{produto.preco_produto}}</p>
+                            <button type="button" class="btn btn-primary">Adicionar ao carrinho</button>
+                        </div>
+                </div>
+            {% endfor %}
+        {% else %}
+        {% endif %}
+    </section>
+</main>
+{% include 'partials\_footer.html' %}
+{% endblock %}
