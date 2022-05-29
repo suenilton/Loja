@@ -11,34 +11,98 @@
         <section class="imgs-home">
             <div class="coluna-1">
                 <div class="produto-1">
-                    <img src="{% static 'imgs\foto-1-loja.jpg' %}" alt="">
-                    <div class="descricao-produto">
-                        <p>Descrição curta</p>
-                        <p>R$ 89,90</p>
-                    </div>
+                    {% if conjuntos %}
+                        {% for conjunto in conjuntos %}
+                            {% if conjunto.numero_conjunto == '1' %}
+                                {% if conjunto.img_conjunto == '' %}
+                                <img src="{% static 'imgs\foto-1-loja.jpg' %}" alt="">
+                                {% else %}
+                                <img src="{{conjunto.img_conjunto.url}}" alt="">
+                                <div class="descricao-produto">
+                                    <p>{{conjunto.nome_conjunto}}</p>
+                                    <p>{{conjunto.preco_conjunto}}</p>
+                                </div>
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    {% else %}
+                        <img src="{% static 'imgs\foto-1-loja.jpg' %}" alt="">
+                        <div class="descricao-produto">
+                            <p>Descrição curta</p>
+                            <p>R$ 89,90</p>
+                        </div>
+                    {% endif %}
                 </div>
                 <div class="produto-2">
-                    <img src="{% static 'imgs\foto-2-loja.jpg' %}" alt="">
-                    <div class="descricao-produto">
-                        <p>Descrição curta</p>
-                        <p>R$ 89,90</p>
-                    </div>
+                    {% if conjuntos %}
+                        {% for conjunto in conjuntos %}
+                            {% if conjunto.numero_conjunto == '2' %}
+                                {% if conjunto.img_conjunto == '' %}
+                                <img src="{% static 'imgs\foto-2-loja.jpg' %}" alt="">
+                                {% else %}
+                                <img src="{{conjunto.img_conjunto.url}}" alt="">
+                                <div class="descricao-produto">
+                                    <p>{{conjunto.nome_conjunto}}</p>
+                                    <p>{{conjunto.preco_conjunto}}</p>
+                                </div>
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    {% else %}
+                        <img src="{% static 'imgs\foto-2-loja.jpg' %}" alt="">
+                        <div class="descricao-produto">
+                            <p>Descrição curta</p>
+                            <p>R$ 89,90</p>
+                        </div>
+                    {% endif %}
                 </div>
             </div>
             <div class="coluna-2">
                 <div class="produto-3">
-                    <img src="{% static 'imgs\foto-3-loja.jpg' %}" alt="">
-                    <div class="descricao-produto">
-                        <p>Descrição curta</p>
-                        <p>R$ 89,90</p>
-                    </div>
+                    {% if conjuntos %}
+                        {% for conjunto in conjuntos %}
+                            {% if conjunto.numero_conjunto == '3' %}
+                                {% if conjunto.img_conjunto == '' %}
+                                <img src="{% static 'imgs\foto-3-loja.jpg' %}" alt="">
+                                {% else %}
+                                <img src="{{conjunto.img_conjunto.url}}" alt="">
+                                <div class="descricao-produto">
+                                    <p>{{conjunto.nome_conjunto}}</p>
+                                    <p>{{conjunto.preco_conjunto}}</p>
+                                </div>
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    {% else %}
+                        <img src="{% static 'imgs\foto-3-loja.jpg' %}" alt="">
+                        <div class="descricao-produto">
+                            <p>Descrição curta</p>
+                            <p>R$ 89,90</p>
+                        </div>
+                    {% endif %}
                 </div>
                 <div class="produto-4">
-                    <img src="{% static 'imgs\foto-4-loja.jpg' %}" alt="">
-                    <div class="descricao-produto">
-                        <p>Descrição curta</p>
-                        <p>R$ 89,90</p>
-                    </div>
+                    {% if conjuntos %}
+                        {% for conjunto in conjuntos %}
+                            {% if conjunto.numero_conjunto == '4' %}
+                                {% if conjunto.img_conjunto == '' %}
+                                <img src="{% static 'imgs\foto-4-loja.jpg' %}" alt="">
+                                {% else %}
+                                <img src="{{conjunto.img_conjunto.url}}" alt="">
+                                <div class="descricao-produto">
+                                    <p>{{conjunto.nome_conjunto}}</p>
+                                    <p>{{conjunto.preco_conjunto}}</p>
+                                </div>
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    {% else %}
+                        <img src="{% static 'imgs\foto-4-loja.jpg' %}" alt="">
+                        <div class="descricao-produto">
+                            <p>Descrição curta</p>
+                            <p>R$ 89,90</p>
+                        </div>
+                    {% endif %}
                 </div>
             </div>
         </section>

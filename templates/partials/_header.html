@@ -7,11 +7,9 @@
             <div class="itens-navbar">
                 <li><a href="{% url 'home' %}">Home</a></li>
                 <li><a href="{% url 'produtos'%}">Produtos</a></li>
-                <li><a href="contato.html">Contato</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
             </div>
             <li class="canto-direito-navbar-login">
-                <a href="login.html"><span class="material-symbols-outlined">account_circle_full</span></a>
+                <a href="{% url 'login'%}"><span class="material-symbols-outlined">account_circle_full</span></a>
             </li>
             <li class="canto-direito-navbar-carrinho">
                 <a href="carrinho.html"><span class="material-symbols-outlined">shopping_cart</span></a>

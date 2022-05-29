@@ -31,13 +31,16 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'roupas',
+    # django apps
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # apps locais
+    'roupas',
+    'usuarios.apps.UsuariosConfig',
 ]
 
 MIDDLEWARE = [
@@ -140,3 +143,6 @@ MESSAGE_TAGS = {
 # Alterando a configuração da pasta raiz do apps do projeto.
 PROJECT_ROOT = os.path.dirname(__file__)
 sys.path.insert(0, os.path.join(PROJECT_ROOT,'..\\apps'))
+
+# Usuario Model
+AUTH_USER_MODEL = 'usuarios.Usuario'
