@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     # apps locais
     'roupas',
     'usuarios.apps.UsuariosConfig',
+    'pages.apps.PagesConfig',
+    'products.apps.ProductsConfig',
 ]
 
 MIDDLEWARE = [
