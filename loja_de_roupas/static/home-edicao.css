@@ -1,5 +1,6 @@
 #bodyconf{
     line-height:1;
+    background-color: #f7f7f7;
 }
 header{
     width: auto;
@@ -66,6 +67,27 @@ nav a:hover{
     background-color: #f7f7f7;
     width: auto;
     padding: 50px;
+}
+.categorias{
+    font-family: 'Akshar', sans-serif;
+    font-size: 40px;
+    display: inline-block;
+    margin-left: 145px;
+}
+.categorias:hover .submenu-categorias{
+    display: flex;
+    flex-direction: column;
+}
+.submenu-categorias{
+    font-size: 30px;
+    position: absolute;
+    top: 311px;
+    display: none;
+    transition: 0.25s all;
+}
+.submenu-categorias button{
+    padding: 10px 50px;
+    text-align: center;
 }
 #subtitulo-p1{
     margin: 35px 390px 60px 440px;

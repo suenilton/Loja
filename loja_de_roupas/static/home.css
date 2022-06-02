@@ -1,5 +1,6 @@
 #bodyconf{
     line-height:1;
+    background-color: #f7f7f7;
 }
 header{
     width: auto;
@@ -60,7 +61,7 @@ nav a:hover{
 .canto-direito-navbar-carrinho a{
     margin: 0 0 0 15px;
 }
-.subtitulo{
+.banner-promocao{
     font-size: 40px;
     background-color: #f7f7f7;
     width: auto;
@@ -73,6 +74,28 @@ nav a:hover{
     text-align: center;
     font-family: 'Smooch', cursive;
     color: #b9b9b9;
+}
+.categorias{
+    font-family: 'Akshar', sans-serif;
+    font-size: 40px;
+    display: inline-block;
+    margin-left: 145px;
+    margin-top: 20px;
+}
+.categorias:hover .submenu-categorias{
+    display: flex;
+    flex-direction: column;
+}
+.submenu-categorias{
+    font-size: 30px;
+    position: absolute;
+    top: 785px;
+    display: none;
+    transition: 0.25s all;
+}
+.submenu-categorias button{
+    padding: 10px 50px;
+    text-align: center;
 }
 .imgs-home{
     background-image: url(imgs/background-imgs-home.jpg);

@@ -5,11 +5,11 @@
     <nav>
         <ul>
             <div class="itens-navbar">
-                <li><a href="{% url 'home' %}">Home</a></li>
-                <li><a href="{% url 'produtos'%}">Produtos</a></li>
+                <li><a href="{% url 'roupas:home' %}">Home</a></li>
+                <li><a href="{% url 'roupas:produtos'%}">Produtos</a></li>
             </div>
             <li class="canto-direito-navbar-login">
-                <a href="{% url 'login'%}"><span class="material-symbols-outlined">account_circle_full</span></a>
+                <a href="{% url 'usuarios:login' %}"><span class="material-symbols-outlined">account_circle</span></a>
             </li>
             <li class="canto-direito-navbar-carrinho">
                 <a href="carrinho.html"><span class="material-symbols-outlined">shopping_cart</span></a>

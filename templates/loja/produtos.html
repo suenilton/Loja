@@ -5,15 +5,48 @@
 {% include 'partials\_header.html' %}
 
 <main>
-    <div class="subtitulo">
-        
+    <div class="banner-promocao">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="{% static 'imgs\img-banner-1.jpg' %}" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'imgs\img-banner-2.jpg' %}" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'imgs\img-banner-3.jpg' %}" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="categorias">
+            <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action active" aria-current="true" disabled>
+                Categorias
+                </button>
+                <div class="submenu-categorias">
+                    <button type="button" class="list-group-item list-group-item-action">Blusas</button>
+                    <button type="button" class="list-group-item list-group-item-action">Calças</button>
+                    <button type="button" class="list-group-item list-group-item-action">T-shirts</button>
+                    <button type="button" class="list-group-item list-group-item-action">Saias</button>
+                </div>
+            </div>
+        </div>
     </div>
     <section class="container-produtos">
         {% if produtos %}
             {% for produto in produtos %}
                 <div class="produto-do-estoque">
                     {% if produto.img_produto == '' %}
-                        <img src="{% static 'imgs\produto-padrao.jpg' %}" alt="">
+                        <img src="{% static 'imgs\img-padrao.jpg' %}" alt="">
                     {% else %}
                         <img src="{{ produto.img_produto.url }}" alt="">
                     {% endif %}

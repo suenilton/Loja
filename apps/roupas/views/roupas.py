@@ -14,8 +14,8 @@ def home(request):
 
 def produtos(request):
     produtos = Produto.objects.order_by('-data_produto').filter(status_produto=True)
-    dados = {
+    context = {
         'produtos': produtos
     }
     
-    return render(request, 'loja\produtos.html', dados)
+    return render(request, 'loja\produtos.html', context)
