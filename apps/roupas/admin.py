@@ -15,7 +15,7 @@ class ListandoConjuntos(admin.ModelAdmin):
     get_date_formated.short_description = 'data de publicação'
 
 class ListandoProdutos(admin.ModelAdmin):
-    list_display = ('id', 'nome_produto', 'preco_produto', 'categoria_produto', 'get_date_formated', 'status_produto' )
+    list_display = ('id', 'nome_produto', 'slug', 'preco_produto', 'categoria_produto', 'get_date_formated', 'status_produto' )
     list_display_links = ('id','nome_produto')
     search_fields = ('nome_produto',)
     list_filter = ('categoria_produto','data_produto', 'status_produto')
@@ -27,6 +27,12 @@ class ListandoProdutos(admin.ModelAdmin):
     
     get_date_formated.short_description = 'data de publicação'
 
+@admin.register(Categoria)
+class ListandoCategorias(admin.ModelAdmin):
+    list_display = ('id', 'nome_categoria', 'slug', 'created', 'modified')
+    list_display_links = ('id','nome_categoria')
+    search_fields = ('nome_categoria',)
+    list_filter = ('nome_categoria', 'created', 'modified')
 
 admin.site.register(ConjuntoRoupas, ListandoConjuntos)
 admin.site.register(Produto, ListandoProdutos)

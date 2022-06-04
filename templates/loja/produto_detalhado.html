@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+{% include 'partials\_header.html' %}
+
+<main>
+    <section>
+        <div class="img-produto-detalhado">
+            <img src="{{ produto.img_produto.url }}" alt="">
+        </div>
+        <div class="descricao-produto-detalhado">
+            <h1>{{produto.nome_produto}}</h1>
+            <p>{{produto.preco_produto}}</p>
+            <p>voltar para categoria 
+                <a href="{{ produto.categoria_produto.get_absolute_url }}">{{produto.categoria_produto}}</a>
+            </p>
+        </div>
+    </section>
+</main>
+{% include 'partials\_footer.html' %}
+{% endblock %}

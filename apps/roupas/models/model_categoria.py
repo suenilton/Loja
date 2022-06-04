@@ -15,3 +15,6 @@ class Categoria(TimeStampedModel):
 
     def __str__(self):
         return self.nome_categoria
+    
+    def get_absolute_url(self):
+        return reverse("roupas:produtos_por_categoria", kwargs={'slug': self.slug})

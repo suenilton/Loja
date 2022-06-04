@@ -29,26 +29,29 @@
         </div>
         <div class="categorias">
             <div class="list-group">
-                <button type="button" class="list-group-item list-group-item-action active" aria-current="true" disabled>
-                Categorias
+                <button type="button" id="bt-categorias" class="list-group-item list-group-item-action active" aria-current="true" disabled>
+                    Categorias
                 </button>
                 <div class="submenu-categorias">
-                    <button type="button" class="list-group-item list-group-item-action">Blusas</button>
-                    <button type="button" class="list-group-item list-group-item-action">Calças</button>
-                    <button type="button" class="list-group-item list-group-item-action">T-shirts</button>
-                    <button type="button" class="list-group-item list-group-item-action">Saias</button>
+                    {% for categoria in categorias %}
+                    <button type="button" class="list-group-item list-group-item-action">
+                        <a href="{{categoria.get_absolute_url}}">{{ categoria.nome_categoria }}</a></button>
+                    {% endfor %}
                 </div>
             </div>
         </div>
+        <button type="button" class="bt-todos-os-produtos" aria-current="true">
+            <a href="{% url 'roupas:produtos' %}">Todos os produtos</a>
+        </button>
     </div>
     <section class="container-produtos">
         {% if produtos %}
             {% for produto in produtos %}
                 <div class="produto-do-estoque">
                     {% if produto.img_produto == '' %}
-                        <img src="{% static 'imgs\img-padrao.jpg' %}" alt="">
+                        <a href="{{produto.get_absolute_url}}"><img src="{% static 'imgs\img-padrao.jpg' %}" alt=""></a>
                     {% else %}
-                        <img src="{{ produto.img_produto.url }}" alt="">
+                        <a href="{{produto.get_absolute_url}}"><img src="{{ produto.img_produto.url }}" alt=""></a>
                     {% endif %}
                         <div class="descricao-produto-loja">
                             <p>{{produto.nome_produto}}</p>

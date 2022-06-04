@@ -82,6 +82,10 @@ nav a:hover{
     margin-left: 145px;
     margin-top: 20px;
 }
+.categorias a{
+    text-decoration: none;
+    color: #000;
+}
 .categorias:hover .submenu-categorias{
     display: flex;
     flex-direction: column;
@@ -96,6 +100,24 @@ nav a:hover{
 .submenu-categorias button{
     padding: 10px 50px;
     text-align: center;
+}
+#bt-categorias{
+    background-color: #708dad;
+    border-color: #708dad;
+}
+.bt-todos-os-produtos{
+    display: inline-block;
+    position: relative;
+    left: 1044px;
+    border: none;
+    background-color: #708dad;
+    border-radius: 0.375rem;
+    padding: 0.5rem;
+}
+.bt-todos-os-produtos a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Akshar', sans-serif;
 }
 .imgs-home{
     background-image: url(imgs/background-imgs-home.jpg);
@@ -230,4 +252,11 @@ footer li a:hover{
 }
 .descricao-produto-loja button:hover{
     cursor: pointer;
+}
+.img-produto-detalhado{
+    display: inline-block;
+}
+.descricao-produto-detalhado{
+    display: inline-block;
+    vertical-align: top;
 }

@@ -85,7 +85,7 @@ WSGI_APPLICATION = 'loja_de_roupas.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dblojaroupas',
+        'NAME': 'dbloja',
         'USER': 'postgres',
         'PASSWORD': '5u3n1lt0n',
         'HOST': 'localhost'
