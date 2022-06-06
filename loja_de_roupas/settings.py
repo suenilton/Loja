@@ -43,8 +43,12 @@ INSTALLED_APPS = [
     'usuarios.apps.UsuariosConfig',
     'pages.apps.PagesConfig',
     'products.apps.ProductsConfig',
+    'carrinho.apps.CarrinhoConfig',
     # apps de terceiros
     'debug_toolbar',
+]
+INTERNAL_IPS = [
+    '127.0.0.1',
 ]
 
 MIDDLEWARE = [
