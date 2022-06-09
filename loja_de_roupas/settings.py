@@ -155,3 +155,8 @@ sys.path.insert(0, os.path.join(PROJECT_ROOT,'..\\apps'))
 
 # Usuario Model
 AUTH_USER_MODEL = 'usuarios.Usuario'
+
+# carrinho
+
+CART_SESSION_ID = "carrinho"
+CART_ITEM_MAX_QUANTITY = 20
